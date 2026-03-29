@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Trang Học Tập - Tài liệu, video bài giảng và sơ đồ tư duy cho các môn học">
+  <title>Học Tập | Lớp Học Thông Minh</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <div class="bg-grid"></div>
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="../index.html" class="nav-logo">
+        <div class="logo-icon">🎓</div>
+        <span>SmartClass</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="../index.html">Trang Chủ</a>
+        <a href="hoc-tap.html">Học Tập</a>
+        <a href="kiem-tra.html">Kiểm Tra</a>
+        <a href="giai-tri.html">Giải Trí</a>
+        <a href="sang-tao.html">Sáng Tạo</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Đổi giao diện">🌙</button>
+        <button class="nav-hamburger" id="navHamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>📚 Học Tập</h1>
+      <p>Tài liệu bài học, video bài giảng và sơ đồ tư duy giúp bạn nắm vững kiến thức</p>
+    </div>
+  </section>
+
+  <!-- Learning Cards -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-in">
+        <div class="section-tag">📖 Môn học</div>
+        <h2>Chọn <span class="highlight">Môn Học</span> của bạn</h2>
+        <p>Khám phá tài liệu phong phú cho từng môn học</p>
+      </div>
+
+      <div class="learning-grid">
+        <!-- Toán -->
+        <div class="learning-card animate-in">
+          <div class="card-thumb-placeholder" style="background: linear-gradient(135deg, rgba(0,224,255,0.15), rgba(139,92,246,0.15));">📐</div>
+          <div class="card-body">
+            <div class="card-tag">Toán học</div>
+            <h3>Hình Học Không Gian</h3>
+            <p>Tìm hiểu về các hình khối trong không gian: hình hộp chữ nhật, hình lăng trụ, hình chóp và cách tính thể tích.</p>
+            <div class="card-footer">
+              <span style="color: var(--text-muted); font-size: 0.82rem;">📄 5 bài học</span>
+              <span class="btn btn-outline" style="padding: 6px 14px; font-size: 0.82rem;">Xem chi tiết →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vật Lý -->
+        <div class="learning-card animate-in">
+          <div class="card-thumb-placeholder" style="background: linear-gradient(135deg, rgba(255,214,0,0.15), rgba(255,0,110,0.15));">⚡</div>
+          <div class="card-body">
+            <div class="card-tag">Vật Lý</div>
+            <h3>Điện Học Cơ Bản</h3>
+            <p>Hiểu về dòng điện, điện áp, điện trở và các định luật cơ bản trong mạch điện đơn giản.</p>
+            <div class="card-footer">
+              <span style="color: var(--text-muted); font-size: 0.82rem;">📄 4 bài học</span>
+              <span class="btn btn-outline" style="padding: 6px 14px; font-size: 0.82rem;">Xem chi tiết →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tin Học -->
+        <div class="learning-card animate-in">
+          <div class="card-thumb-placeholder" style="background: linear-gradient(135deg, rgba(0,255,136,0.15), rgba(0,224,255,0.15));">💻</div>
+          <div class="card-body">
+            <div class="card-tag">Tin Học</div>
+            <h3>Lập Trình Web Cơ Bản</h3>
+            <p>Làm quen với HTML, CSS và JavaScript — ba ngôn ngữ nền tảng để xây dựng trang web.</p>
+            <div class="card-footer">
+              <span style="color: var(--text-muted); font-size: 0.82rem;">📄 6 bài học</span>
+              <span class="btn btn-outline" style="padding: 6px 14px; font-size: 0.82rem;">Xem chi tiết →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tiếng Anh -->
+        <div class="learning-card animate-in">
+          <div class="card-thumb-placeholder" style="background: linear-gradient(135deg, rgba(139,92,246,0.15), rgba(255,0,110,0.15));">🌍</div>
+          <div class="card-body">
+            <div class="card-tag">Tiếng Anh</div>
+            <h3>Grammar & Vocabulary</h3>
+            <p>Ôn tập ngữ pháp và từ vựng tiếng Anh lớp 8 theo từng unit với bài tập tương tác.</p>
+            <div class="card-footer">
+              <span style="color: var(--text-muted); font-size: 0.82rem;">📄 8 bài học</span>
+              <span class="btn btn-outline" style="padding: 6px 14px; font-size: 0.82rem;">Xem chi tiết →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ngữ Văn -->
+        <div class="learning-card animate-in">
+          <div class="card-thumb-placeholder" style="background: linear-gradient(135deg, rgba(255,0,110,0.15), rgba(255,214,0,0.15));">📝</div>
+          <div class="card-body">
+            <div class="card-tag">Ngữ Văn</div>
+            <h3>Phân Tích Văn Bản</h3>
+            <p>Hướng dẫn phân tích các tác phẩm văn học trong chương trình lớp 8 với sơ đồ tư duy.</p>
+            <div class="card-footer">
+              <span style="color: var(--text-muted); font-size: 0.82rem;">📄 7 bài học</span>
+              <span class="btn btn-outline" style="padding: 6px 14px; font-size: 0.82rem;">Xem chi tiết →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lịch Sử -->
+        <div class="learning-card animate-in">
+          <div class="card-thumb-placeholder" style="background: linear-gradient(135deg, rgba(255,214,0,0.15), rgba(0,224,255,0.15));">🏛️</div>
+          <div class="card-body">
+            <div class="card-tag">Lịch Sử</div>
+            <h3>Lịch Sử Việt Nam</h3>
+            <p>Khám phá các sự kiện lịch sử quan trọng của Việt Nam từ thời kỳ dựng nước đến hiện đại.</p>
+            <div class="card-footer">
+              <span style="color: var(--text-muted); font-size: 0.82rem;">📄 6 bài học</span>
+              <span class="btn btn-outline" style="padding: 6px 14px; font-size: 0.82rem;">Xem chi tiết →</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-in">
+        <div class="section-tag">🎬 Video</div>
+        <h2>Video <span class="highlight">Bài Giảng</span></h2>
+        <p>Xem video bài giảng chất lượng từ các kênh giáo dục uy tín</p>
+      </div>
+
+      <div class="learning-grid" style="grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));">
+        <div class="animate-in">
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/qz0aGYrrlhU" title="HTML CSS Tutorial" allowfullscreen></iframe>
+          </div>
+          <div style="padding: 16px 0;">
+            <h3 style="font-size: 1rem; margin-bottom: 4px;">HTML & CSS cho người mới bắt đầu</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">Học cơ bản về cấu trúc web</p>
+          </div>
+        </div>
+
+        <div class="animate-in">
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/W6NZfCO5SIk" title="JavaScript Tutorial" allowfullscreen></iframe>
+          </div>
+          <div style="padding: 16px 0;">
+            <h3 style="font-size: 1rem; margin-bottom: 4px;">JavaScript cơ bản</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">Lập trình tương tác cho trang web</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mindmap / Diagram Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-in">
+        <div class="section-tag">🗺️ Sơ đồ</div>
+        <h2>Sơ Đồ <span class="highlight">Tư Duy</span></h2>
+        <p>Tổng hợp kiến thức bằng sơ đồ dễ nhớ</p>
+      </div>
+
+      <div class="diagram-container animate-in" style="overflow-x: auto;">
+        <div style="text-align: center; min-width: 700px;">
+          <h3 style="margin-bottom: 32px; color: var(--cyan-primary); font-size: 1.3rem;">🌐 Cấu Trúc & Công Nghệ Website</h3>
+          
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 0;">
+            <!-- Level 0: Root -->
+            <div style="padding: 16px 40px; background: linear-gradient(135deg, var(--cyan-primary), var(--accent-purple)); color: #000; font-weight: 800; border-radius: var(--radius-md); font-size: 1.15rem; box-shadow: 0 4px 20px var(--cyan-glow);">
+              🌐 Website Lớp Học Thông Minh
+            </div>
+            <div style="width: 3px; height: 30px; background: linear-gradient(var(--cyan-primary), var(--border-glass));"></div>
+            
+            <!-- Level 1: Main branches -->
+            <div style="display: flex; gap: 0; position: relative; width: 100%; justify-content: center;">
+              <!-- Horizontal connector line -->
+              <div style="position: absolute; top: 0; left: 15%; right: 15%; height: 3px; background: var(--border-glass);"></div>
+              
+              <!-- Branch 1: Frontend -->
+              <div style="flex: 1; max-width: 220px; display: flex; flex-direction: column; align-items: center;">
+                <div style="width: 3px; height: 20px; background: var(--border-glass);"></div>
+                <div style="padding: 12px 20px; background: rgba(0,224,255,0.12); border: 1.5px solid rgba(0,224,255,0.3); border-radius: var(--radius-sm); font-weight: 700; font-size: 0.95rem; color: var(--cyan-primary); width: 100%; text-align: center;">
+                  📄 Frontend
+                </div>
+                <div style="width: 3px; height: 16px; background: var(--border-glass);"></div>
+                <div style="display: flex; flex-direction: column; gap: 8px; width: 100%;">
+                  <div style="padding: 10px 14px; background: var(--bg-glass); border: 1px solid var(--border-glass); border-radius: 8px; font-size: 0.82rem; display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 1.1rem;">📝</span>
+                    <div><strong>HTML</strong><br><span style="color: var(--text-muted); font-size: 0.75rem;">Cấu trúc · Thẻ · Thuộc tính</span></div>
+                  </div>
+                  <div style="padding: 10px 14px; background: var(--bg-glass); border: 1px solid var(--border-glass); border-radius: 8px; font-size: 0.82rem; display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 1.1rem;">🎨</span>
+                    <div><strong>CSS</strong><br><span style="color: var(--text-muted); font-size: 0.75rem;">Giao diện · Flexbox · Grid</span></div>
+                  </div>
+                  <div style="padding: 10px 14px; background: var(--bg-glass); border: 1px solid var(--border-glass); border-radius: 8px; font-size: 0.82rem; display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 1.1rem;">⚡</span>
+                    <div><strong>JavaScript</strong><br><span style="color: var(--text-muted); font-size: 0.75rem;">Tương tác · DOM · Events</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Branch 2: Nội dung -->
+              <div style="flex: 1; max-width: 220px; display: flex; flex-direction: column; align-items: center;">
+                <div style="width: 3px; height: 20px; background: var(--border-glass);"></div>
+                <div style="padding: 12px 20px; background: rgba(139,92,246,0.12); border: 1.5px solid rgba(139,92,246,0.3); border-radius: var(--radius-sm); font-weight: 700; font-size: 0.95rem; color: var(--accent-purple); width: 100%; text-align: center;">
+                  📚 Nội Dung
+                </div>
+                <div style="width: 3px; height: 16px; background: var(--border-glass);"></div>
+                <div style="display: flex; flex-direction: column; gap: 8px; width: 100%;">
+                  <div style="padding: 10px 14px; background: var(--bg-glass); border: 1px solid var(--border-glass); border-radius: 8px; font-size: 0.82rem; display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 1.1rem;">📖</span>
+                    <div><strong>Học Tập</strong><br><span style="color: var(--text-muted); font-size: 0.75rem;">Bài giảng · Video · Sơ đồ</span></div>
+                  </div>
+                  <div style="padding: 10px 14px; background: var(--bg-glass); border: 1px solid var(--border-glass); border-radius: 8px; font-size: 0.82rem; display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 1.1rem;">✅</span>
+                    <div><strong>Kiểm Tra</strong><br><span style="color: var(--text-muted); font-size: 0.75rem;">Quiz · Google Form · Điểm</span></div>
+                  </div>
+                  <div style="padding: 10px 14px; background: var(--bg-glass); border: 1px solid var(--border-glass); border-radius: 8px; font-size: 0.82rem; display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 1.1rem;">🎮</span>
+                    <div><strong>Giải Trí</strong><br><span style="color: var(--text-muted); font-size: 0.75rem;">Oẳn tù tì · Memory Card</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Branch 3: Kỹ thuật -->
+              <div style="flex: 1; max-width: 220px; display: flex; flex-direction: column; align-items: center;">
+                <div style="width: 3px; height: 20px; background: var(--border-glass);"></div>
+                <div style="padding: 12px 20px; background: rgba(0,255,136,0.12); border: 1.5px solid rgba(0,255,136,0.3); border-radius: var(--radius-sm); font-weight: 700; font-size: 0.95rem; color: var(--accent-green); width: 100%; text-align: center;">
+                  🔧 Kỹ Thuật
+                </div>
+                <div style="width: 3px; height: 16px; background: var(--border-glass);"></div>
+                <div style="display: flex; flex-direction: column; gap: 8px; width: 100%;">
+                  <div style="padding: 10px 14px; background: var(--bg-glass); border: 1px solid var(--border-glass); border-radius: 8px; font-size: 0.82rem; display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 1.1rem;">📁</span>
+                    <div><strong>Cấu trúc thư mục</strong><br><span style="color: var(--text-muted); font-size: 0.75rem;">index.html · pages/ · css/ · js/</span></div>
+                  </div>
+                  <div style="padding: 10px 14px; background: var(--bg-glass); border: 1px solid var(--border-glass); border-radius: 8px; font-size: 0.82rem; display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 1.1rem;">📱</span>
+                    <div><strong>Responsive</strong><br><span style="color: var(--text-muted); font-size: 0.75rem;">Mobile · Tablet · Desktop</span></div>
+                  </div>
+                  <div style="padding: 10px 14px; background: var(--bg-glass); border: 1px solid var(--border-glass); border-radius: 8px; font-size: 0.82rem; display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 1.1rem;">🤖</span>
+                    <div><strong>AI Chatbot</strong><br><span style="color: var(--text-muted); font-size: 0.75rem;">Gemini API · Trợ giảng</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Branch 4: Sáng tạo -->
+              <div style="flex: 1; max-width: 220px; display: flex; flex-direction: column; align-items: center;">
+                <div style="width: 3px; height: 20px; background: var(--border-glass);"></div>
+                <div style="padding: 12px 20px; background: rgba(255,214,0,0.12); border: 1.5px solid rgba(255,214,0,0.3); border-radius: var(--radius-sm); font-weight: 700; font-size: 0.95rem; color: var(--accent-yellow); width: 100%; text-align: center;">
+                  🚀 Sáng Tạo
+                </div>
+                <div style="width: 3px; height: 16px; background: var(--border-glass);"></div>
+                <div style="display: flex; flex-direction: column; gap: 8px; width: 100%;">
+                  <div style="padding: 10px 14px; background: var(--bg-glass); border: 1px solid var(--border-glass); border-radius: 8px; font-size: 0.82rem; display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 1.1rem;">🌓</span>
+                    <div><strong>Dark/Light Mode</strong><br><span style="color: var(--text-muted); font-size: 0.75rem;">CSS Variables · localStorage</span></div>
+                  </div>
+                  <div style="padding: 10px 14px; background: var(--bg-glass); border: 1px solid var(--border-glass); border-radius: 8px; font-size: 0.82rem; display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 1.1rem;">✨</span>
+                    <div><strong>Animations</strong><br><span style="color: var(--text-muted); font-size: 0.75rem;">Typing · Scroll · Hover</span></div>
+                  </div>
+                  <div style="padding: 10px 14px; background: var(--bg-glass); border: 1px solid var(--border-glass); border-radius: 8px; font-size: 0.82rem; display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 1.1rem;">🔗</span>
+                    <div><strong>Tài liệu & Link</strong><br><span style="color: var(--text-muted); font-size: 0.75rem;">Filter · VietJack · W3Schools</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">
+        <div class="logo-icon">🎓</div>
+        <span>SmartClass</span>
+      </div>
+      <p>© 2026 Lớp Học Thông Minh — Cuộc thi thiết kế website</p>
+      <div class="footer-links">
+        <a href="../index.html">Trang Chủ</a>
+        <a href="hoc-tap.html">Học Tập</a>
+        <a href="kiem-tra.html">Kiểm Tra</a>
+        <a href="giai-tri.html">Giải Trí</a>
+        <a href="sang-tao.html">Sáng Tạo</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

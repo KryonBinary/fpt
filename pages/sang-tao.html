@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sáng Tạo - Góc tài liệu hay, AI Chatbot trợ giảng và Dark/Light Mode">
+  <title>Sáng Tạo | Lớp Học Thông Minh</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <div class="bg-grid"></div>
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="../index.html" class="nav-logo">
+        <div class="logo-icon">🎓</div>
+        <span>SmartClass</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="../index.html">Trang Chủ</a>
+        <a href="hoc-tap.html">Học Tập</a>
+        <a href="kiem-tra.html">Kiểm Tra</a>
+        <a href="giai-tri.html">Giải Trí</a>
+        <a href="sang-tao.html">Sáng Tạo</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Đổi giao diện">🌙</button>
+        <button class="nav-hamburger" id="navHamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>🚀 Sáng Tạo</h1>
+      <p>Góc cá nhân hóa — tài liệu hay, trợ giảng AI và nhiều tính năng sáng tạo</p>
+    </div>
+  </section>
+
+  <!-- Documents Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-in">
+        <div class="section-tag">📁 Tài liệu</div>
+        <h2>Góc <span class="highlight">Tài Liệu Hay</span></h2>
+        <p>Tổng hợp tài liệu chất lượng, lọc theo môn học</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-bar animate-in">
+        <button class="filter-btn active" data-filter="all" onclick="filterDocs('all')">📚 Tất cả</button>
+        <button class="filter-btn" data-filter="toan" onclick="filterDocs('toan')">📐 Toán</button>
+        <button class="filter-btn" data-filter="vatly" onclick="filterDocs('vatly')">⚡ Vật Lý</button>
+        <button class="filter-btn" data-filter="tinhoc" onclick="filterDocs('tinhoc')">💻 Tin Học</button>
+        <button class="filter-btn" data-filter="anh" onclick="filterDocs('anh')">🌍 Tiếng Anh</button>
+        <button class="filter-btn" data-filter="van" onclick="filterDocs('van')">📝 Ngữ Văn</button>
+      </div>
+
+      <!-- Documents Grid -->
+      <div class="docs-grid animate-in">
+        <a class="doc-item" data-category="toan" href="https://vietjack.com/toan-lop-8/index.jsp" target="_blank" rel="noopener">
+          <div class="doc-icon">📐</div>
+          <div class="doc-info">
+            <h4>Công thức Hình Học lớp 8</h4>
+            <p>Tổng hợp toàn bộ công thức • VietJack</p>
+          </div>
+        </a>
+        <a class="doc-item" data-category="toan" href="https://toanmath.com/" target="_blank" rel="noopener">
+          <div class="doc-icon">📊</div>
+          <div class="doc-info">
+            <h4>Bất phương trình bậc nhất</h4>
+            <p>Lý thuyết + bài tập có lời giải • ToanMath</p>
+          </div>
+        </a>
+        <a class="doc-item" data-category="toan" href="https://mathx.vn/" target="_blank" rel="noopener">
+          <div class="doc-icon">🧮</div>
+          <div class="doc-info">
+            <h4>Luyện toán online MATHX</h4>
+            <p>Bài giảng sinh động + bài tập • MATHX</p>
+          </div>
+        </a>
+        <a class="doc-item" data-category="vatly" href="https://thuvienvatly.com/" target="_blank" rel="noopener">
+          <div class="doc-icon">⚡</div>
+          <div class="doc-info">
+            <h4>Định luật Ôm & Điện học</h4>
+            <p>Tóm tắt + sơ đồ mạch điện • Thư Viện Vật Lý</p>
+          </div>
+        </a>
+        <a class="doc-item" data-category="vatly" href="https://vietjack.com/vat-ly-lop-8/index.jsp" target="_blank" rel="noopener">
+          <div class="doc-icon">🔬</div>
+          <div class="doc-info">
+            <h4>Áp suất chất lỏng</h4>
+            <p>Công thức và ứng dụng • VietJack</p>
+          </div>
+        </a>
+        <a class="doc-item" data-category="vatly" href="https://hocmai.vn/" target="_blank" rel="noopener">
+          <div class="doc-icon">🎓</div>
+          <div class="doc-info">
+            <h4>HOCMAI - Khóa Vật Lý 8</h4>
+            <p>Video bài giảng chuyên sâu • HOCMAI</p>
+          </div>
+        </a>
+        <a class="doc-item" data-category="tinhoc" href="https://www.w3schools.com/html/default.asp" target="_blank" rel="noopener">
+          <div class="doc-icon">💻</div>
+          <div class="doc-info">
+            <h4>W3Schools - HTML Tutorial</h4>
+            <p>Hướng dẫn HTML từ cơ bản • W3Schools</p>
+          </div>
+        </a>
+        <a class="doc-item" data-category="tinhoc" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noopener">
+          <div class="doc-icon">🎨</div>
+          <div class="doc-info">
+            <h4>CSS Flexbox Guide</h4>
+            <p>Hướng dẫn bố cục Flexbox • CSS-Tricks</p>
+          </div>
+        </a>
+        <a class="doc-item" data-category="tinhoc" href="https://javascript.info/" target="_blank" rel="noopener">
+          <div class="doc-icon">⚡</div>
+          <div class="doc-info">
+            <h4>JavaScript.info</h4>
+            <p>Biến, hàm, vòng lặp, sự kiện • JavaScript.info</p>
+          </div>
+        </a>
+        <a class="doc-item" data-category="tinhoc" href="https://luyenthi123.com/" target="_blank" rel="noopener">
+          <div class="doc-icon">📝</div>
+          <div class="doc-info">
+            <h4>Tin Học 8 - LuyenThi123</h4>
+            <p>Bài giảng & bài tập Tin Học • LuyenThi123</p>
+          </div>
+        </a>
+        <a class="doc-item" data-category="anh" href="https://langgo.edu.vn/" target="_blank" rel="noopener">
+          <div class="doc-icon">🌍</div>
+          <div class="doc-info">
+            <h4>Từ vựng & Ngữ pháp lớp 8</h4>
+            <p>Theo từng Unit - Global Success • LangGo</p>
+          </div>
+        </a>
+        <a class="doc-item" data-category="anh" href="https://www.english-grammar.at/online_exercises/tenses/tenses-overview.htm" target="_blank" rel="noopener">
+          <div class="doc-icon">📖</div>
+          <div class="doc-info">
+            <h4>12 Tenses Practice</h4>
+            <p>Bài tập 12 thì tiếng Anh online</p>
+          </div>
+        </a>
+        <a class="doc-item" data-category="anh" href="https://hocaz.vn/" target="_blank" rel="noopener">
+          <div class="doc-icon">🎯</div>
+          <div class="doc-info">
+            <h4>Hocaz - Ôn luyện Tiếng Anh</h4>
+            <p>Trắc nghiệm & đề thi • Hocaz</p>
+          </div>
+        </a>
+        <a class="doc-item" data-category="van" href="https://vietjack.com/ngu-van-lop-8/index.jsp" target="_blank" rel="noopener">
+          <div class="doc-icon">📝</div>
+          <div class="doc-info">
+            <h4>Cách viết bài văn nghị luận</h4>
+            <p>Dàn ý + mẫu bài hay • VietJack</p>
+          </div>
+        </a>
+        <a class="doc-item" data-category="van" href="https://hocmai.vn/" target="_blank" rel="noopener">
+          <div class="doc-icon">📚</div>
+          <div class="doc-info">
+            <h4>Phân tích Lão Hạc</h4>
+            <p>Phân tích chi tiết tác phẩm • HOCMAI</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Chatbot Section (Gemini API) -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-in">
+        <div class="section-tag">🤖 AI</div>
+        <h2>Trợ Giảng <span class="highlight">AI Chatbot</span></h2>
+        <p>Sử dụng Gemini AI — hỏi đáp mọi thứ về học tập</p>
+      </div>
+
+      <div class="chatbot-widget animate-in">
+        <div class="chatbot-header">
+          <div class="bot-avatar">✨</div>
+          <div class="bot-info">
+            <h4>SmartBot <span style="font-size:0.75rem; color: var(--accent-purple); font-weight:400;">Gemini 2.5 Flash</span></h4>
+            <p id="botStatus">● Sẵn sàng</p>
+          </div>
+        </div>
+
+        <div class="chatbot-messages" id="chatMessages">
+          <div class="chat-msg bot">
+            Xin chào! 👋 Mình là SmartBot — trợ giảng AI được hỗ trợ bởi <strong>Google Gemini</strong>. Bạn có thể hỏi mình bất cứ điều gì về học tập, từ Toán, Lý, Tin Học đến Tiếng Anh!
+          </div>
+        </div>
+
+        <div class="chatbot-input">
+          <input type="text" id="chatInput" placeholder="Hỏi bất cứ điều gì..." autocomplete="off">
+          <button id="chatSend" title="Gửi">➤</button>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 20px;" class="animate-in">
+        <p style="color: var(--text-muted); font-size: 0.82rem;">
+          🔑 Powered by Google Gemini 2.5 Flash — Hãy hỏi bất cứ điều gì liên quan đến học tập!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sharing Corner -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-in">
+        <div class="section-tag">💬 Chia sẻ</div>
+        <h2>Góc <span class="highlight">Chia Sẻ</span></h2>
+        <p>Nơi chia sẻ kinh nghiệm học tập và thư giãn</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card animate-in">
+          <div class="card-icon">📸</div>
+          <h3>Khoảnh Khắc Lớp Học</h3>
+          <p>Những hình ảnh đáng nhớ của lớp 8A trong các hoạt động học tập và ngoại khóa.</p>
+        </div>
+        <div class="feature-card card-purple animate-in">
+          <div class="card-icon">💭</div>
+          <h3>Câu Nói Hay</h3>
+          <p>"Giáo dục không phải là đổ đầy xô nước, mà là thắp lên ngọn lửa." — William Butler Yeats</p>
+        </div>
+        <div class="feature-card card-green animate-in">
+          <div class="card-icon">🎯</div>
+          <h3>Mục Tiêu</h3>
+          <p>Học kỳ này, cả lớp sẽ nỗ lực để đạt thành tích xuất sắc trong cuộc thi thiết kế website!</p>
+        </div>
+        <div class="feature-card card-yellow animate-in">
+          <div class="card-icon">🌟</div>
+          <h3>Thành Viên Nổi Bật</h3>
+          <p>Tuyên dương các bạn có đóng góp tích cực cho website và hoạt động nhóm.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">
+        <div class="logo-icon">🎓</div>
+        <span>SmartClass</span>
+      </div>
+      <p>© 2026 Lớp Học Thông Minh — Cuộc thi thiết kế website</p>
+      <div class="footer-links">
+        <a href="../index.html">Trang Chủ</a>
+        <a href="hoc-tap.html">Học Tập</a>
+        <a href="kiem-tra.html">Kiểm Tra</a>
+        <a href="giai-tri.html">Giải Trí</a>
+        <a href="sang-tao.html">Sáng Tạo</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

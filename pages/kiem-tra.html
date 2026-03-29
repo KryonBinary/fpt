@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kiểm tra ôn tập - Bài trắc nghiệm tương tác tự động chấm điểm">
+  <title>Kiểm Tra - Ôn Tập | Lớp Học Thông Minh</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <div class="bg-grid"></div>
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="../index.html" class="nav-logo">
+        <div class="logo-icon">🎓</div>
+        <span>SmartClass</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="../index.html">Trang Chủ</a>
+        <a href="hoc-tap.html">Học Tập</a>
+        <a href="kiem-tra.html">Kiểm Tra</a>
+        <a href="giai-tri.html">Giải Trí</a>
+        <a href="sang-tao.html">Sáng Tạo</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Đổi giao diện">🌙</button>
+        <button class="nav-hamburger" id="navHamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>✅ Kiểm Tra - Ôn Tập</h1>
+      <p>Trắc nghiệm tương tác giúp bạn kiểm tra và củng cố kiến thức</p>
+    </div>
+  </section>
+
+  <!-- Quiz Section -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Tabs -->
+      <div class="tabs-container">
+        <div class="tabs" style="margin-bottom: 40px;">
+          <button class="tab-btn active" data-tab="tab-quiz">🧠 Mini Quiz</button>
+          <button class="tab-btn" data-tab="tab-form">📝 Google Form</button>
+        </div>
+
+        <!-- Tab 1: Mini Quiz -->
+        <div class="tab-content active" id="tab-quiz">
+          <div class="section-header animate-in">
+            <div class="section-tag">🧠 Trắc nghiệm</div>
+            <h2>Mini <span class="highlight">Quiz</span></h2>
+            <p>10 câu hỏi trắc nghiệm về Tin Học — Tự động chấm điểm ngay!</p>
+          </div>
+
+          <div class="quiz-container">
+            <div class="quiz-card" id="quizCard">
+              <!-- Quiz renders here by JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Google Form -->
+        <div class="tab-content" id="tab-form">
+          <div class="section-header animate-in">
+            <div class="section-tag">📝 Bài kiểm tra</div>
+            <h2>Bài Kiểm Tra <span class="highlight">Google Form</span></h2>
+            <p>Làm bài kiểm tra đầy đủ ngay trên trang web — không cần mở tab mới</p>
+          </div>
+
+          <div class="form-embed animate-in">
+            <iframe 
+              src="https://docs.google.com/forms/d/e/1FAIpQLSe5Y8wHAByLyjqfOeuK0g0HJqWIQ9GIEp1hXgIiJI37BCCQ3A/viewform?embedded=true" 
+              width="100%" 
+              height="800" 
+              frameborder="0" 
+              marginheight="0" 
+              marginwidth="0"
+              title="Bài kiểm tra trực tuyến">
+              Đang tải…
+            </iframe>
+          </div>
+
+          <div style="text-align:center; margin-top: 20px;">
+            <p style="color: var(--text-muted); font-size: 0.85rem;">
+              💡 Nếu form không hiển thị, hãy 
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5Y8wHAByLyjqfOeuK0g0HJqWIQ9GIEp1hXgIiJI37BCCQ3A/viewform" 
+                 target="_blank" 
+                 style="color: var(--cyan-primary); text-decoration: underline;">
+                mở trực tiếp Google Form
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Tips Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-in">
+        <div class="section-tag">💡 Mẹo</div>
+        <h2>Mẹo <span class="highlight">Ôn Tập</span> Hiệu Quả</h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card animate-in">
+          <div class="card-icon">⏰</div>
+          <h3>Pomodoro</h3>
+          <p>Học 25 phút, nghỉ 5 phút. Sau 4 vòng, nghỉ dài 15-30 phút để não bộ phục hồi.</p>
+        </div>
+        <div class="feature-card card-purple animate-in">
+          <div class="card-icon">📝</div>
+          <h3>Ghi Chép</h3>
+          <p>Tóm tắt bài học bằng lời của mình. Viết tay giúp ghi nhớ tốt hơn gõ máy tính.</p>
+        </div>
+        <div class="feature-card card-green animate-in">
+          <div class="card-icon">🔄</div>
+          <h3>Ôn Lại Định Kỳ</h3>
+          <p>Ôn bài sau 1 ngày, 3 ngày, 1 tuần để kiến thức đi vào trí nhớ dài hạn.</p>
+        </div>
+        <div class="feature-card card-yellow animate-in">
+          <div class="card-icon">🤝</div>
+          <h3>Học Nhóm</h3>
+          <p>Giải thích cho bạn bè hiểu là cách ôn tập hiệu quả nhất. Dạy người khác = tự học mình.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">
+        <div class="logo-icon">🎓</div>
+        <span>SmartClass</span>
+      </div>
+      <p>© 2026 Lớp Học Thông Minh — Cuộc thi thiết kế website</p>
+      <div class="footer-links">
+        <a href="../index.html">Trang Chủ</a>
+        <a href="hoc-tap.html">Học Tập</a>
+        <a href="kiem-tra.html">Kiểm Tra</a>
+        <a href="giai-tri.html">Giải Trí</a>
+        <a href="sang-tao.html">Sáng Tạo</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

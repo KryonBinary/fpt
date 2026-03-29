@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website Lớp Học Thông Minh - Nền tảng học tập, kiểm tra và giải trí dành cho học sinh lớp 8">
+  <title>Lớp Học Thông Minh | Trang Chủ</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Background Effects -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">🎓</div>
+        <span>SmartClass</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Trang Chủ</a>
+        <a href="pages/hoc-tap.html">Học Tập</a>
+        <a href="pages/kiem-tra.html">Kiểm Tra</a>
+        <a href="pages/giai-tri.html">Giải Trí</a>
+        <a href="pages/sang-tao.html">Sáng Tạo</a>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:10px;">
+        <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Đổi giao diện">🌙</button>
+        <button class="nav-hamburger" id="navHamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Cuộc thi Website Lớp Học Thông Minh
+        </div>
+
+        <h1>
+          Khám Phá <br>
+          <span class="highlight">Lớp Học Thông Minh</span>
+        </h1>
+
+        <div class="hero-typing" id="typingText"></div>
+
+        <p>
+          Nền tảng học tập trực tuyến hiện đại dành cho học sinh lớp 8. 
+          Học tập, kiểm tra, giải trí — tất cả trong một nơi.
+        </p>
+
+        <div class="hero-btns">
+          <a href="pages/hoc-tap.html" class="btn btn-primary">📚 Bắt đầu học</a>
+          <a href="pages/kiem-tra.html" class="btn btn-outline">✅ Làm bài kiểm tra</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="hero-card-code">
+            <span class="comment">// Chào mừng đến Lớp Học Thông Minh</span><br>
+            <span class="keyword">const</span> student = {<br>
+            &nbsp;&nbsp;name: <span class="string">"Học Sinh Lớp 8"</span>,<br>
+            &nbsp;&nbsp;class: <span class="string">"8A"</span>,<br>
+            &nbsp;&nbsp;skills: [<span class="string">"HTML"</span>, <span class="string">"CSS"</span>, <span class="string">"JS"</span>],<br>
+            &nbsp;&nbsp;score: <span class="number">100</span><br>
+            };<br><br>
+            <span class="function">startLearning</span>(student); <span class="comment">// 🚀</span>
+          </div>
+        </div>
+
+        <div class="float-element fe-1">
+          📊 <span class="text-cyan">Điểm: 10/10</span>
+        </div>
+        <div class="float-element fe-2">
+          🎮 <span class="text-green">Game mới!</span>
+        </div>
+        <div class="float-element fe-3">
+          ⚡ <span class="text-purple">Online</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="section">
+    <div class="container">
+      <div class="stats-bar animate-in">
+        <div class="stat-item">
+          <div class="stat-number" data-target="5" data-suffix=" trang">0</div>
+          <div class="stat-label">Trang Web</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="10" data-suffix=" câu">0</div>
+          <div class="stat-label">Câu Hỏi Trắc Nghiệm</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="2" data-suffix=" game">0</div>
+          <div class="stat-label">Trò Chơi</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="100" data-suffix="%">0</div>
+          <div class="stat-label">Sáng Tạo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header animate-in">
+        <div class="section-tag">✨ Tính năng</div>
+        <h2>Khám phá các <span class="highlight">Trang Web</span></h2>
+        <p>Website được thiết kế với nhiều tính năng hữu ích, giúp việc học tập trở nên thú vị hơn</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card animate-in">
+          <div class="card-icon">📚</div>
+          <h3>Học Tập</h3>
+          <p>Tài liệu bài học trực quan với video, sơ đồ tư duy và nội dung phong phú cho các môn học.</p>
+        </div>
+        <div class="feature-card card-purple animate-in">
+          <div class="card-icon">✅</div>
+          <h3>Kiểm Tra - Ôn Tập</h3>
+          <p>Trắc nghiệm tương tác với 10 câu hỏi, tự động chấm điểm và hiển thị kết quả ngay lập tức.</p>
+        </div>
+        <div class="feature-card card-green animate-in">
+          <div class="card-icon">🎮</div>
+          <h3>Giải Trí</h3>
+          <p>Thư giãn với game Oẳn Tù Tì và Memory Card — giải trí lành mạnh sau giờ học.</p>
+        </div>
+        <div class="feature-card card-pink animate-in">
+          <div class="card-icon">🚀</div>
+          <h3>Sáng Tạo</h3>
+          <p>Góc tài liệu hay, trợ giảng AI Chatbot và chuyển đổi Dark/Light Mode thông minh.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">
+        <div class="logo-icon">🎓</div>
+        <span>SmartClass</span>
+      </div>
+      <p>© 2026 Lớp Học Thông Minh — Cuộc thi thiết kế website</p>
+      <div class="footer-links">
+        <a href="index.html">Trang Chủ</a>
+        <a href="pages/hoc-tap.html">Học Tập</a>
+        <a href="pages/kiem-tra.html">Kiểm Tra</a>
+        <a href="pages/giai-tri.html">Giải Trí</a>
+        <a href="pages/sang-tao.html">Sáng Tạo</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
